@@ -14,7 +14,7 @@ import {
   Image,
   TouchableHighlight,
   TabBarIOS,
-  NavigatorIOS,
+
 } from 'react-native';
 
 const item = () => {
@@ -40,7 +40,7 @@ const item = () => {
   </TouchableHighlight>
 }
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -113,18 +113,6 @@ class App extends Component {
         </View>
       </View>
     );
-  }
-}
-
-export default class NavigatorIOSApp extends Component {
-  render() {
-    <NavigatorIOS
-      initialRoute={{
-        component: App,
-        title: 'My Initial Scene',
-      }}
-      style={{flex: 1}}    
-    ></NavigatorIOS>
   }
 }
 
